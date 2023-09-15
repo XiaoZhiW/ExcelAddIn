@@ -2,9 +2,9 @@
 
 (function () {
 
-
     Office.onReady((info) => {
-        if (info.host === Office.HostType.Excel) {
+        if (info.host === Office.HostType.Excel) 
+        {
             // Assign event handlers and other initialization logic.
             document.getElementById("set-color").onclick = (() => tryCatch(setColor));
             document.getElementById("create-table").onclick = (() => tryCatch(createTable));
@@ -13,7 +13,6 @@
             document.getElementById("create-chart").onclick = (() => tryCatch(createChart));
             document.getElementById("freeze-header").onclick = (() => tryCatch(freezeHeader));
             document.getElementById("open-dialog").onclick = (() => tryCatch(openDialog));
-
         }
     });
 
@@ -57,10 +56,7 @@
                 ["9/15/2023", "Trey Research", "Other", "135"],
                 ["9/15/2023", "Best For You Organics Company", "Groceries", "97"]
             ]);
-
-
-            // Learn more about the Excel number format syntax in this article:
-            // https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68
+            
             expensesTable.columns.getItemAt(3).getRange().numberFormat = [['\u20AC#,##0.00']];
 
             expensesTable.getRange().format.autofitColumns();
@@ -124,8 +120,8 @@
             chart.title.text = "Expenses";
             chart.legend.position = "Right";
             chart.legend.format.fill.setSolidColor("white");
-            chart.dataLabels.format.font.size = 15;
-            chart.dataLabels.format.font.color = "black";
+            chart.dataLabels.format.font.size = 20;
+            chart.dataLabels.format.font.color = "red";
             chart.series.getItemAt(0).name = 'Value in \u20AC';
 
             await context.sync();
@@ -148,7 +144,6 @@
 
 
     let dialog = null;
-
     /**
      * This function opens a dialog that uses popup.html.
      */
