@@ -1,2 +1,10 @@
 # ExcelAddin
 ExcelWebAddin Test
+Addin Functions:
+set color
+create table
+filter table
+sort table
+create chart
+freeze header
+open dialog
