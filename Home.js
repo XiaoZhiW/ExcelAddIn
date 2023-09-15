@@ -49,13 +49,13 @@
                 [["Date", "Merchant", "Category", "Amount"]];
 
             expensesTable.rows.add(null /*add at the end*/, [
-                ["1/1/2023", "The Phone Company", "Communications", "120"],
-                ["1/2/2023", "Northwind Electric Cars", "Transportation", "142.33"],
-                ["1/5/2023", "Best For You Organics Company", "Groceries", "27.9"],
-                ["1/10/2023", "Coho Vineyard", "Restaurant", "33"],
-                ["1/11/2023", "Bellows College", "Education", "350.1"],
-                ["1/15/2023", "Trey Research", "Other", "135"],
-                ["1/15/2023", "Best For You Organics Company", "Groceries", "97.88"]
+                ["9/1/2023", "The Phone Company", "Communications", "120"],
+                ["9/2/2023", "Northwind Electric Cars", "Transportation", "142"],
+                ["9/5/2023", "Best For You Organics Company", "Groceries", "27"],
+                ["9/10/2023", "Coho Vineyard", "Restaurant", "33"],
+                ["9/11/2023", "Bellows College", "Education", "350"],
+                ["9/15/2023", "Trey Research", "Other", "135"],
+                ["9/15/2023", "Best For You Organics Company", "Groceries", "97"]
             ]);
 
 
